@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이전 기수 결과물 - 명지대 바이브 코딩 부트캠프</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="bg-gray-900/50 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="https://www.mju.ac.kr/sites/mju_ht/images/logo.png" alt="명지대학교 로고" class="h-8">
+                        <span class="text-xl font-bold">바이브 코딩</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white">메인</a>
+                    <a href="reviews.html" class="text-gray-300 hover:text-white">후기</a>
+                    <a href="projects.html" class="text-gray-300 hover:text-white">이전 기수 결과물</a>
+                    <a href="apply.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">수강 신청</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">메인</a>
+            <a href="reviews.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">후기</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">이전 기수 결과물</a>
+            <a href="apply.html" class="block py-2 px-4 text-sm text-white bg-blue-600 hover:bg-blue-700">수강 신청</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+        <h1 class="text-4xl font-bold text-center mb-12">이전 기수 결과물</h1>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden cursor-pointer" onclick="openModal('Project 1', 'https://picsum.photos/seed/project1/800/600', 'Project 1 Description')">
+                <img src="https://picsum.photos/seed/project1/400/300" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Project 1</h3>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden cursor-pointer" onclick="openModal('Project 2', 'https://picsum.photos/seed/project2/800/600', 'Project 2 Description')">
+                <img src="https://picsum.photos/seed/project2/400/300" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Project 2</h3>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden cursor-pointer" onclick="openModal('Project 3', 'https://picsum.photos/seed/project3/800/600', 'Project 3 Description')">
+                <img src="https://picsum.photos/seed/project3/400/300" alt="Project 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Project 3</h3>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+        <div class="bg-gray-800 rounded-lg overflow-hidden max-w-3xl w-full">
+            <div class="p-4 flex justify-between items-center">
+                <h2 id="modal-title" class="text-2xl font-bold"></h2>
+                <button onclick="closeModal()" class="text-white">&times;</button>
+            </div>
+            <img id="modal-image" src="" alt="Project Image" class="w-full">
+            <div class="p-4">
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-sm text-gray-400">(주)한시경 | 대표: 양진욱 | 사업자번호: 189-81-02353 | 정보통신업</p>
+                    <p class="text-sm text-gray-400">주소: 서울특별시 서초구 서초대로74길 51, 1304호(서초동, 강남역 롯데골드로즈)</p>
+                    <p class="text-sm text-gray-400">전화: 02-2043-2748 | 이메일: onepm@onepm.kr</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.onepm.kr/" target="_blank" class="text-gray-400 hover:text-white">홈페이지</a>
+                    <a href="https://www.youtube.com/@hansikyung" target="_blank" class="text-gray-400 hover:text-white">유튜브</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수강 후기 - 명지대 바이브 코딩 부트캠프</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="bg-gray-900/50 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="https://www.mju.ac.kr/sites/mju_ht/images/logo.png" alt="명지대학교 로고" class="h-8">
+                        <span class="text-xl font-bold">바이브 코딩</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white">메인</a>
+                    <a href="reviews.html" class="text-gray-300 hover:text-white">후기</a>
+                    <a href="projects.html" class="text-gray-300 hover:text-white">이전 기수 결과물</a>
+                    <a href="apply.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">수강 신청</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">메인</a>
+            <a href="reviews.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">후기</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">이전 기수 결과물</a>
+            <a href="apply.html" class="block py-2 px-4 text-sm text-white bg-blue-600 hover:bg-blue-700">수강 신청</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+        <h1 class="text-4xl font-bold text-center mb-12">생생한 수강 후기</h1>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <p class="text-gray-300 mb-4">"명지대 바이브 코딩 부트캠프는 정말 유익한 시간이었습니다. AI와 함께하는 개발의 새로운 패러다임을 경험할 수 있었습니다."</p>
+                <p class="text-right font-bold">- 김철수</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <p class="text-gray-300 mb-4">"프롬프트 입력 방법을 배우면서 AI와의 소통이 훨씬 쉬워졌습니다. 강사님의 설명도 매우 명확했습니다."</p>
+                <p class="text-right font-bold">- 이영희</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <p class="text-gray-300 mb-4">"디자인과 개발을 동시에 배울 수 있어 매우 만족스러웠습니다. 실무에 바로 적용할 수 있는 내용이 많았습니다."</p>
+                <p class="text-right font-bold">- 박민수</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <p class="text-gray-300 mb-4">"백엔드 연결 등 고급 기능 설계에 대한 이해가 깊어졌습니다. 실제 프로젝트에 적용할 수 있을 것 같습니다."</p>
+                <p class="text-right font-bold">- 최지은</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <p class="text-gray-300 mb-4">"결과물을 발표하면서 다른 사람들의 작업을 보니 많은 영감을 받았습니다. 다음 기수에도 참여하고 싶습니다."</p>
+                <p class="text-right font-bold">- 정우성</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-sm text-gray-400">(주)한시경 | 대표: 양진욱 | 사업자번호: 189-81-02353 | 정보통신업</p>
+                    <p class="text-sm text-gray-400">주소: 서울특별시 서초구 서초대로74길 51, 1304호(서초동, 강남역 롯데골드로즈)</p>
+                    <p class="text-sm text-gray-400">전화: 02-2043-2748 | 이메일: onepm@onepm.kr</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.onepm.kr/" target="_blank" class="text-gray-400 hover:text-white">홈페이지</a>
+                    <a href="https://www.youtube.com/@hansikyung" target="_blank" class="text-gray-400 hover:text-white">유튜브</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
